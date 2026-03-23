@@ -1,0 +1,130 @@
+this is a current in devlopment plan we are now currently rewriting it please ignore the text file
+
+---
+
+## 📁 Every Hook in the Project — Explained
+
+### 1. `useCart.js`
+```js
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
+
+export function useCart() {
+  return useContext(CartContext);
+}
+```
+**What it does:** Instead of writing `useContext(CartContext)` in every single component that needs cart data, you just write `useCart()`. Your `Navbar`, `CartDrawer`, `ProductDetail`, and `CartPage` all need cart data — this hook gives them all a clean one-liner import. Think of it as a shortcut to your cart's global state.
+
+---
+
+### 2. `useWishlist.js`
+Same pattern as `useCart` but for the wishlist context. Any component that needs to add/remove items from the wishlist or check if an item is already wishlisted just calls `useWishlist()` instead of importing both `useContext` and `WishlistContext` separately.
+
+---
+
+### 3. `useAuth.js`
+```js
+export function useAuth() {
+  return useContext(AuthContext);
+  // Returns: { user, login, logout, isLoggedIn }
+}
+```
+Your `Navbar` needs to show "Login" or the user's name. Your `AuthGuard` needs to check if someone is logged in. Your `ProfilePage` needs the user's fake data. All of them just call `useAuth()` — one hook, zero repetition.
+
+---
+
+### 4. `useSearch.js`
+This one is more complex and is the most valuable hook in the project:
+```js
+import Fuse from 'fuse.js';
+import { useMemo, useState } from 'react';
+import { allProducts } from '../data/allProducts';
+
+export function useSearch() {
+  const [query, setQuery] = useState('');
+
+  // Fuse instance created ONCE, not on every keystroke
+  const fuse = useMemo(() => new Fuse(allProducts, {
+    keys: ['name', 'type', 'category', 'gender', 'fabric'],
+    threshold: 0.3,
+  }), []);
+
+  const results = query.length > 1
+    ? fuse.search(query).map(r => r.item)
+    : [];
+
+  return { query, setQuery, results };
+}
+```
+**Why this matters:** If you put this logic directly inside your `SearchBar` component, you'd re-create the Fuse instance on every single render. By isolating it here with `useMemo`, it's created only once. Also, both your `SearchBar` (in the navbar) and your `SearchResultsPage` need search logic — this hook gives both components the exact same logic without copying code.
+
+---
+
+### 5. `useLocalStorage.js`
+This is arguably the most reusable utility hook in the whole project:
+```js
+export function useLocalStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = useState(() => {
+    try {
+      const item = localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch {
+      return initialValue;
+    }
+  });
+
+  const setValue = (value) => {
+    setStoredValue(value);
+    localStorage.setItem(key, JSON.stringify(value));
+  };
+
+  return [storedValue, setValue];
+}
+```
+**Why this matters:** Without this hook, your `CartContext`, `WishlistContext`, and `AuthContext` would each have 10+ lines of repetitive localStorage read/write/error-handling code. With this hook, each context replaces all that with one line: `const [cart, setCart] = useLocalStorage('cart', [])`. It behaves exactly like `useState` but the value survives page refresh.
+
+---
+
+### 6. `useScrollPosition.js`
+```js
+export function useScrollPosition() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handler = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handler);
+    return () => window.removeEventListener('scroll', handler);
+  }, []);
+
+  return scrollY;
+}
+```
+**What it does:** Your `Navbar` needs to add a shadow/background when the user scrolls down. Your `ScrollToTop` button needs to appear after 300px of scroll. Without this hook, both components would each have their own `useEffect` with `addEventListener` and `removeEventListener` — duplicated setup and cleanup. This hook handles it once and both components just call `const scrollY = useScrollPosition()`.
+
+---
+
+### 7. `useMediaQuery.js`
+```js
+export function useMediaQuery(query) {
+  const [matches, setMatches] = useState(
+    () => window.matchMedia(query).matches
+  );
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const listener = () => setMatches(media.matches);
+    media.addEventListener('change', listener);
+    return () => media.removeEventListener('change', listener);
+  }, [query]);
+
+  return matches;
+}
+```
+**Usage example:**
+```js
+const isMobile = useMediaQuery('(max-width: 768px)');
+```
+**What it does:** Your `ShopPage` needs to show a sidebar on desktop but a bottom drawer on mobile. Your `ProductGrid` might show 4 columns on desktop, 2 on tablet, 1 on mobile. This hook gives any component live, reactive access to the current screen size — when the user resizes the browser or rotates their phone, the component automatically re-renders with the correct layout.
+
+---
+
