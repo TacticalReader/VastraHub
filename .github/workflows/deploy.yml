@@ -2,44 +2,70 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: "main"
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-jobs:
-  build_site:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
-      - name: Install Node.js
+jobs:
+  build:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --frozen-lockfile
 
-      - name: Build
+      - name: Run linting (optional but recommended)
+        run: npm run lint --if-present
+
+      - name: Run tests (optional)
+        run: npm test --if-present
+
+      - name: Build production bundle
         run: npm run build
+        env:
+          NODE_ENV: production
+          # CI: true   # Uncomment if your build needs it
 
-      - name: Upload Artifacts
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/
+          path: ./dist
 
   deploy:
-    needs: build_site
+    name: Deploy to GitHub Pages
+    needs: build
+    if: success()                     # Only deploy if build succeeded
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Deploy
+      - name: Deploy site
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Show deployment status
+        run: |
+          echo "::notice title=Deployment Successful::Your site is now live at ${{ steps.deployment.outputs.page_url }}"
