@@ -1,0 +1,158 @@
+[
+  {
+    "id": "women-casual-kurtas-001",
+    "name": "Printed Cotton Kurti",
+    "gender": "women",
+    "type": "casual-kurtas",
+    "category": "outdoor",
+    "price": 6132,
+    "mrp": 8476,
+    "originalPrice": 8476,
+    "images": [
+      "assets/images/products/women/casual-kurtas/ckurta-001-a.webp",
+      "assets/images/products/women/casual-kurtas/ckurta-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.3,
+    "reviews": 54,
+    "description": "Elevate your wardrobe with the Printed Cotton Kurti. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-casual-kurtas-002",
+    "name": "Floral Rayon Tunic",
+    "gender": "women",
+    "type": "casual-kurtas",
+    "category": "outdoor",
+    "price": 5259,
+    "mrp": 7400,
+    "originalPrice": 7400,
+    "images": [
+      "assets/images/products/women/casual-kurtas/ckurta-002-a.webp",
+      "assets/images/products/women/casual-kurtas/ckurta-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.9,
+    "reviews": 124,
+    "description": "Elevate your wardrobe with the Floral Rayon Tunic. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-casual-kurtas-003",
+    "name": "Yellow Block Print Kurta",
+    "gender": "women",
+    "type": "casual-kurtas",
+    "category": "outdoor",
+    "price": 4927,
+    "mrp": 6551,
+    "originalPrice": 6551,
+    "images": [
+      "assets/images/products/women/casual-kurtas/ckurta-003-a.webp",
+      "assets/images/products/women/casual-kurtas/ckurta-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 152,
+    "description": "Elevate your wardrobe with the Yellow Block Print Kurta. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-casual-kurtas-004",
+    "name": "Indigo Everyday Kurta",
+    "gender": "women",
+    "type": "casual-kurtas",
+    "category": "outdoor",
+    "price": 5158,
+    "mrp": 7612,
+    "originalPrice": 7612,
+    "images": [
+      "assets/images/products/women/casual-kurtas/ckurta-004-a.webp",
+      "assets/images/products/women/casual-kurtas/ckurta-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.6,
+    "reviews": 50,
+    "description": "Elevate your wardrobe with the Indigo Everyday Kurta. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-casual-kurtas-005",
+    "name": "White Embroidered Kurta",
+    "gender": "women",
+    "type": "casual-kurtas",
+    "category": "outdoor",
+    "price": 2451,
+    "mrp": 3980,
+    "originalPrice": 3980,
+    "images": [
+      "assets/images/products/women/casual-kurtas/ckurta-005-a.webp",
+      "assets/images/products/women/casual-kurtas/ckurta-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 148,
+    "description": "Elevate your wardrobe with the White Embroidered Kurta. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-casual-kurtas-006",
+    "name": "Peach Summer Tunic",
+    "gender": "women",
+    "type": "casual-kurtas",
+    "category": "outdoor",
+    "price": 2770,
+    "mrp": 4439,
+    "originalPrice": 4439,
+    "images": [
+      "assets/images/products/women/casual-kurtas/ckurta-006-a.webp",
+      "assets/images/products/women/casual-kurtas/ckurta-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.6,
+    "reviews": 269,
+    "description": "Elevate your wardrobe with the Peach Summer Tunic. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  }
+]

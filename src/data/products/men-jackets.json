@@ -1,0 +1,158 @@
+[
+  {
+    "id": "men-jackets-001",
+    "name": "Leather Biker Jacket",
+    "gender": "men",
+    "type": "jackets",
+    "category": "outdoor",
+    "price": 2022,
+    "mrp": 4944,
+    "originalPrice": 4944,
+    "images": [
+      "assets/images/products/men/jackets/jacket-001-a.webp",
+      "assets/images/products/men/jackets/jacket-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 133,
+    "description": "Elevate your wardrobe with the Leather Biker Jacket. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-jackets-002",
+    "name": "Olive Field Jacket",
+    "gender": "men",
+    "type": "jackets",
+    "category": "outdoor",
+    "price": 4539,
+    "mrp": 6703,
+    "originalPrice": 6703,
+    "images": [
+      "assets/images/products/men/jackets/jacket-002-a.webp",
+      "assets/images/products/men/jackets/jacket-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.9,
+    "reviews": 307,
+    "description": "Elevate your wardrobe with the Olive Field Jacket. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-jackets-003",
+    "name": "Quilted Bomber",
+    "gender": "men",
+    "type": "jackets",
+    "category": "outdoor",
+    "price": 2943,
+    "mrp": 4819,
+    "originalPrice": 4819,
+    "images": [
+      "assets/images/products/men/jackets/jacket-003-a.webp",
+      "assets/images/products/men/jackets/jacket-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 180,
+    "description": "Elevate your wardrobe with the Quilted Bomber. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-jackets-004",
+    "name": "Denim Trucker Jacket",
+    "gender": "men",
+    "type": "jackets",
+    "category": "outdoor",
+    "price": 2040,
+    "mrp": 4078,
+    "originalPrice": 4078,
+    "images": [
+      "assets/images/products/men/jackets/jacket-004-a.webp",
+      "assets/images/products/men/jackets/jacket-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.5,
+    "reviews": 206,
+    "description": "Elevate your wardrobe with the Denim Trucker Jacket. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-jackets-005",
+    "name": "Navy Harrington",
+    "gender": "men",
+    "type": "jackets",
+    "category": "outdoor",
+    "price": 2083,
+    "mrp": 4658,
+    "originalPrice": 4658,
+    "images": [
+      "assets/images/products/men/jackets/jacket-005-a.webp",
+      "assets/images/products/men/jackets/jacket-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.3,
+    "reviews": 47,
+    "description": "Elevate your wardrobe with the Navy Harrington. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-jackets-006",
+    "name": "Fleece Lined Puffer",
+    "gender": "men",
+    "type": "jackets",
+    "category": "outdoor",
+    "price": 3456,
+    "mrp": 6445,
+    "originalPrice": 6445,
+    "images": [
+      "assets/images/products/men/jackets/jacket-006-a.webp",
+      "assets/images/products/men/jackets/jacket-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 214,
+    "description": "Elevate your wardrobe with the Fleece Lined Puffer. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  }
+]

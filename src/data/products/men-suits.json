@@ -1,0 +1,158 @@
+[
+  {
+    "id": "men-suits-001",
+    "name": "Classic Navy Pinstripe Suit",
+    "gender": "men",
+    "type": "suits",
+    "category": "formal",
+    "price": 4857,
+    "mrp": 5889,
+    "originalPrice": 5889,
+    "images": [
+      "assets/images/products/men/suits/suit-001-a.webp",
+      "assets/images/products/men/suits/suit-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.3,
+    "reviews": 261,
+    "description": "Elevate your wardrobe with the Classic Navy Pinstripe Suit. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-suits-002",
+    "name": "Charcoal Wool Suit",
+    "gender": "men",
+    "type": "suits",
+    "category": "formal",
+    "price": 3176,
+    "mrp": 5567,
+    "originalPrice": 5567,
+    "images": [
+      "assets/images/products/men/suits/suit-002-a.webp",
+      "assets/images/products/men/suits/suit-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 3.6,
+    "reviews": 104,
+    "description": "Elevate your wardrobe with the Charcoal Wool Suit. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-suits-003",
+    "name": "Grey Windowpane Suit",
+    "gender": "men",
+    "type": "suits",
+    "category": "formal",
+    "price": 6062,
+    "mrp": 7963,
+    "originalPrice": 7963,
+    "images": [
+      "assets/images/products/men/suits/suit-003-a.webp",
+      "assets/images/products/men/suits/suit-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.2,
+    "reviews": 226,
+    "description": "Elevate your wardrobe with the Grey Windowpane Suit. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-suits-004",
+    "name": "Midnight Blue Tuxedo",
+    "gender": "men",
+    "type": "suits",
+    "category": "formal",
+    "price": 3430,
+    "mrp": 5316,
+    "originalPrice": 5316,
+    "images": [
+      "assets/images/products/men/suits/suit-004-a.webp",
+      "assets/images/products/men/suits/suit-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4,
+    "reviews": 140,
+    "description": "Elevate your wardrobe with the Midnight Blue Tuxedo. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-suits-005",
+    "name": "Beige Linen Suit",
+    "gender": "men",
+    "type": "suits",
+    "category": "formal",
+    "price": 2646,
+    "mrp": 4619,
+    "originalPrice": 4619,
+    "images": [
+      "assets/images/products/men/suits/suit-005-a.webp",
+      "assets/images/products/men/suits/suit-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.4,
+    "reviews": 23,
+    "description": "Elevate your wardrobe with the Beige Linen Suit. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-suits-006",
+    "name": "Black Three-Piece Suit",
+    "gender": "men",
+    "type": "suits",
+    "category": "formal",
+    "price": 2732,
+    "mrp": 5449,
+    "originalPrice": 5449,
+    "images": [
+      "assets/images/products/men/suits/suit-006-a.webp",
+      "assets/images/products/men/suits/suit-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 304,
+    "description": "Elevate your wardrobe with the Black Three-Piece Suit. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  }
+]

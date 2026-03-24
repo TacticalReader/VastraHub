@@ -1,0 +1,158 @@
+[
+  {
+    "id": "men-dress-shirts-001",
+    "name": "White Oxford Shirt",
+    "gender": "men",
+    "type": "dress-shirts",
+    "category": "formal",
+    "price": 6284,
+    "mrp": 7583,
+    "originalPrice": 7583,
+    "images": [
+      "assets/images/products/men/dress-shirts/shirt-001-a.webp",
+      "assets/images/products/men/dress-shirts/shirt-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 3.5,
+    "reviews": 62,
+    "description": "Elevate your wardrobe with the White Oxford Shirt. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-dress-shirts-002",
+    "name": "Light Blue Poplin",
+    "gender": "men",
+    "type": "dress-shirts",
+    "category": "formal",
+    "price": 3368,
+    "mrp": 4766,
+    "originalPrice": 4766,
+    "images": [
+      "assets/images/products/men/dress-shirts/shirt-002-a.webp",
+      "assets/images/products/men/dress-shirts/shirt-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.6,
+    "reviews": 219,
+    "description": "Elevate your wardrobe with the Light Blue Poplin. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-dress-shirts-003",
+    "name": "Pink Check Formal Shirt",
+    "gender": "men",
+    "type": "dress-shirts",
+    "category": "formal",
+    "price": 2265,
+    "mrp": 3580,
+    "originalPrice": 3580,
+    "images": [
+      "assets/images/products/men/dress-shirts/shirt-003-a.webp",
+      "assets/images/products/men/dress-shirts/shirt-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.3,
+    "reviews": 192,
+    "description": "Elevate your wardrobe with the Pink Check Formal Shirt. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-dress-shirts-004",
+    "name": "French Cuff Dress Shirt",
+    "gender": "men",
+    "type": "dress-shirts",
+    "category": "formal",
+    "price": 5314,
+    "mrp": 8007,
+    "originalPrice": 8007,
+    "images": [
+      "assets/images/products/men/dress-shirts/shirt-004-a.webp",
+      "assets/images/products/men/dress-shirts/shirt-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.2,
+    "reviews": 140,
+    "description": "Elevate your wardrobe with the French Cuff Dress Shirt. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-dress-shirts-005",
+    "name": "Striped Business Shirt",
+    "gender": "men",
+    "type": "dress-shirts",
+    "category": "formal",
+    "price": 2989,
+    "mrp": 4997,
+    "originalPrice": 4997,
+    "images": [
+      "assets/images/products/men/dress-shirts/shirt-005-a.webp",
+      "assets/images/products/men/dress-shirts/shirt-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.8,
+    "reviews": 260,
+    "description": "Elevate your wardrobe with the Striped Business Shirt. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-dress-shirts-006",
+    "name": "Black Silk Dress Shirt",
+    "gender": "men",
+    "type": "dress-shirts",
+    "category": "formal",
+    "price": 5605,
+    "mrp": 7240,
+    "originalPrice": 7240,
+    "images": [
+      "assets/images/products/men/dress-shirts/shirt-006-a.webp",
+      "assets/images/products/men/dress-shirts/shirt-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 179,
+    "description": "Elevate your wardrobe with the Black Silk Dress Shirt. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  }
+]

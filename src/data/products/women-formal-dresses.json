@@ -1,0 +1,158 @@
+[
+  {
+    "id": "women-formal-dresses-001",
+    "name": "Navy Shift Dress",
+    "gender": "women",
+    "type": "formal-dresses",
+    "category": "formal",
+    "price": 2067,
+    "mrp": 4535,
+    "originalPrice": 4535,
+    "images": [
+      "assets/images/products/women/formal-dresses/dress-001-a.webp",
+      "assets/images/products/women/formal-dresses/dress-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 3.7,
+    "reviews": 245,
+    "description": "Elevate your wardrobe with the Navy Shift Dress. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-dresses-002",
+    "name": "Black Sheath Dress",
+    "gender": "women",
+    "type": "formal-dresses",
+    "category": "formal",
+    "price": 3592,
+    "mrp": 4878,
+    "originalPrice": 4878,
+    "images": [
+      "assets/images/products/women/formal-dresses/dress-002-a.webp",
+      "assets/images/products/women/formal-dresses/dress-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 3.6,
+    "reviews": 297,
+    "description": "Elevate your wardrobe with the Black Sheath Dress. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-dresses-003",
+    "name": "Burgundy Midi Dress",
+    "gender": "women",
+    "type": "formal-dresses",
+    "category": "formal",
+    "price": 4680,
+    "mrp": 5719,
+    "originalPrice": 5719,
+    "images": [
+      "assets/images/products/women/formal-dresses/dress-003-a.webp",
+      "assets/images/products/women/formal-dresses/dress-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.4,
+    "reviews": 302,
+    "description": "Elevate your wardrobe with the Burgundy Midi Dress. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-dresses-004",
+    "name": "Emerald Wrap Dress",
+    "gender": "women",
+    "type": "formal-dresses",
+    "category": "formal",
+    "price": 5626,
+    "mrp": 8143,
+    "originalPrice": 8143,
+    "images": [
+      "assets/images/products/women/formal-dresses/dress-004-a.webp",
+      "assets/images/products/women/formal-dresses/dress-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.8,
+    "reviews": 283,
+    "description": "Elevate your wardrobe with the Emerald Wrap Dress. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-dresses-005",
+    "name": "Grey Peplum Dress",
+    "gender": "women",
+    "type": "formal-dresses",
+    "category": "formal",
+    "price": 5482,
+    "mrp": 8291,
+    "originalPrice": 8291,
+    "images": [
+      "assets/images/products/women/formal-dresses/dress-005-a.webp",
+      "assets/images/products/women/formal-dresses/dress-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.1,
+    "reviews": 179,
+    "description": "Elevate your wardrobe with the Grey Peplum Dress. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-dresses-006",
+    "name": "Navy Pleated Dress",
+    "gender": "women",
+    "type": "formal-dresses",
+    "category": "formal",
+    "price": 4566,
+    "mrp": 6746,
+    "originalPrice": 6746,
+    "images": [
+      "assets/images/products/women/formal-dresses/dress-006-a.webp",
+      "assets/images/products/women/formal-dresses/dress-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 90,
+    "description": "Elevate your wardrobe with the Navy Pleated Dress. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  }
+]

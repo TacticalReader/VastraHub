@@ -1,0 +1,158 @@
+[
+  {
+    "id": "men-hoodies-001",
+    "name": "Grey Pullover Hoodie",
+    "gender": "men",
+    "type": "hoodies",
+    "category": "outdoor",
+    "price": 4870,
+    "mrp": 7360,
+    "originalPrice": 7360,
+    "images": [
+      "assets/images/products/men/hoodies/hoodie-001-a.webp",
+      "assets/images/products/men/hoodies/hoodie-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 5,
+    "reviews": 31,
+    "description": "Elevate your wardrobe with the Grey Pullover Hoodie. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-hoodies-002",
+    "name": "Black Zip-Up Sweatshirt",
+    "gender": "men",
+    "type": "hoodies",
+    "category": "outdoor",
+    "price": 4702,
+    "mrp": 6528,
+    "originalPrice": 6528,
+    "images": [
+      "assets/images/products/men/hoodies/hoodie-002-a.webp",
+      "assets/images/products/men/hoodies/hoodie-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.2,
+    "reviews": 93,
+    "description": "Elevate your wardrobe with the Black Zip-Up Sweatshirt. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-hoodies-003",
+    "name": "Navy Classic Hoodie",
+    "gender": "men",
+    "type": "hoodies",
+    "category": "outdoor",
+    "price": 6133,
+    "mrp": 8119,
+    "originalPrice": 8119,
+    "images": [
+      "assets/images/products/men/hoodies/hoodie-003-a.webp",
+      "assets/images/products/men/hoodies/hoodie-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 186,
+    "description": "Elevate your wardrobe with the Navy Classic Hoodie. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-hoodies-004",
+    "name": "Maroon Fleece Hoodie",
+    "gender": "men",
+    "type": "hoodies",
+    "category": "outdoor",
+    "price": 2280,
+    "mrp": 3976,
+    "originalPrice": 3976,
+    "images": [
+      "assets/images/products/men/hoodies/hoodie-004-a.webp",
+      "assets/images/products/men/hoodies/hoodie-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4,
+    "reviews": 159,
+    "description": "Elevate your wardrobe with the Maroon Fleece Hoodie. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-hoodies-005",
+    "name": "Olive Heavyweight Hoodie",
+    "gender": "men",
+    "type": "hoodies",
+    "category": "outdoor",
+    "price": 2816,
+    "mrp": 4785,
+    "originalPrice": 4785,
+    "images": [
+      "assets/images/products/men/hoodies/hoodie-005-a.webp",
+      "assets/images/products/men/hoodies/hoodie-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.9,
+    "reviews": 132,
+    "description": "Elevate your wardrobe with the Olive Heavyweight Hoodie. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-hoodies-006",
+    "name": "White Graphic Sweatshirt",
+    "gender": "men",
+    "type": "hoodies",
+    "category": "outdoor",
+    "price": 2068,
+    "mrp": 3864,
+    "originalPrice": 3864,
+    "images": [
+      "assets/images/products/men/hoodies/hoodie-006-a.webp",
+      "assets/images/products/men/hoodies/hoodie-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 5,
+    "reviews": 225,
+    "description": "Elevate your wardrobe with the White Graphic Sweatshirt. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  }
+]

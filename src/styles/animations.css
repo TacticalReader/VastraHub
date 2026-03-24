@@ -1,0 +1,112 @@
+/* ============================================
+   VastraHub — Keyframe Animations
+   ============================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-100%); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(100%); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+/* ─── Utility animation classes ─── */
+.animate-fade-in       { animation: fadeIn 250ms ease forwards; }
+.animate-fade-in-down  { animation: fadeInDown 280ms ease forwards; }
+.animate-fade-in-up    { animation: fadeInUp 280ms ease forwards; }
+.animate-slide-in-left { animation: slideInLeft 300ms ease forwards; }
+.animate-scale-in      { animation: scaleIn 200ms ease forwards; }
+.animate-spin          { animation: spin 0.8s linear infinite; }
+.animate-pulse         { animation: pulse 1.5s ease-in-out infinite; }
+.animate-bounce        { animation: bounce 1.2s ease-in-out infinite; }
+
+/* Skeleton shimmer */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-border-light) 25%,
+    var(--color-bg-secondary) 50%,
+    var(--color-border-light) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+/* ─── Premium additions ─────────────────────── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes ripple {
+  0%   { transform: scale(0); opacity: 0.6; }
+  100% { transform: scale(4); opacity: 0; }
+}
+
+@keyframes textReveal {
+  0%   { clip-path: inset(0 100% 0 0); opacity: 0; }
+  100% { clip-path: inset(0 0% 0 0);   opacity: 1; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(200, 66, 26, 0.4); }
+  50%       { box-shadow: 0 0 22px rgba(200, 66, 26, 0.9); }
+}
+
+/* Utility classes for new animations */
+.animate-float          { animation: float 3s ease-in-out infinite; }
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+}
+.animate-glow-pulse     { animation: glowPulse 2s ease-in-out infinite; }
+.animate-text-reveal    { animation: textReveal 0.6s cubic-bezier(0.77, 0, 0.18, 1) forwards; }
+

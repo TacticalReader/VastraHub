@@ -1,0 +1,158 @@
+[
+  {
+    "id": "women-track-pants-001",
+    "name": "Black Yoga Joggers",
+    "gender": "women",
+    "type": "track-pants",
+    "category": "outdoor",
+    "price": 6004,
+    "mrp": 7028,
+    "originalPrice": 7028,
+    "images": [
+      "assets/images/products/women/track-pants/track-001-a.webp",
+      "assets/images/products/women/track-pants/track-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 3.9,
+    "reviews": 66,
+    "description": "Elevate your wardrobe with the Black Yoga Joggers. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-track-pants-002",
+    "name": "Grey Marl Track Pants",
+    "gender": "women",
+    "type": "track-pants",
+    "category": "outdoor",
+    "price": 5536,
+    "mrp": 6813,
+    "originalPrice": 6813,
+    "images": [
+      "assets/images/products/women/track-pants/track-002-a.webp",
+      "assets/images/products/women/track-pants/track-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4,
+    "reviews": 32,
+    "description": "Elevate your wardrobe with the Grey Marl Track Pants. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-track-pants-003",
+    "name": "Navy Active Bottoms",
+    "gender": "women",
+    "type": "track-pants",
+    "category": "outdoor",
+    "price": 5517,
+    "mrp": 7537,
+    "originalPrice": 7537,
+    "images": [
+      "assets/images/products/women/track-pants/track-003-a.webp",
+      "assets/images/products/women/track-pants/track-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 93,
+    "description": "Elevate your wardrobe with the Navy Active Bottoms. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-track-pants-004",
+    "name": "Olive Training Joggers",
+    "gender": "women",
+    "type": "track-pants",
+    "category": "outdoor",
+    "price": 6026,
+    "mrp": 8264,
+    "originalPrice": 8264,
+    "images": [
+      "assets/images/products/women/track-pants/track-004-a.webp",
+      "assets/images/products/women/track-pants/track-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4,
+    "reviews": 19,
+    "description": "Elevate your wardrobe with the Olive Training Joggers. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-track-pants-005",
+    "name": "Maroon Fleece Sweats",
+    "gender": "women",
+    "type": "track-pants",
+    "category": "outdoor",
+    "price": 5452,
+    "mrp": 6762,
+    "originalPrice": 6762,
+    "images": [
+      "assets/images/products/women/track-pants/track-005-a.webp",
+      "assets/images/products/women/track-pants/track-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 125,
+    "description": "Elevate your wardrobe with the Maroon Fleece Sweats. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-track-pants-006",
+    "name": "Black Striped Track Pants",
+    "gender": "women",
+    "type": "track-pants",
+    "category": "outdoor",
+    "price": 2224,
+    "mrp": 3690,
+    "originalPrice": 3690,
+    "images": [
+      "assets/images/products/women/track-pants/track-006-a.webp",
+      "assets/images/products/women/track-pants/track-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 93,
+    "description": "Elevate your wardrobe with the Black Striped Track Pants. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  }
+]

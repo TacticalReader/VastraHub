@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="#e8f5e9" stroke="#4caf50" stroke-width="4" />
+
+  <!-- Checkmark -->
+  <path d="M38 62 L52 76 L82 46" stroke="#4caf50" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Small sparkle accent -->
+  <path d="M90 30 L94 38 L102 42 L94 46 L90 54 L86 46 L78 42 L86 38 Z" fill="#81c784" />
+
+  <!-- Tiny dot accent -->
+  <circle cx="28" cy="32" r="6" fill="#81c784" />
+</svg>

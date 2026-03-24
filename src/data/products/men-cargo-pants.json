@@ -1,0 +1,158 @@
+[
+  {
+    "id": "men-cargo-pants-001",
+    "name": "Olive Slim Cargos",
+    "gender": "men",
+    "type": "cargo-pants",
+    "category": "outdoor",
+    "price": 4003,
+    "mrp": 5869,
+    "originalPrice": 5869,
+    "images": [
+      "assets/images/products/men/cargo-pants/cargo-001-a.webp",
+      "assets/images/products/men/cargo-pants/cargo-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 159,
+    "description": "Elevate your wardrobe with the Olive Slim Cargos. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-cargo-pants-002",
+    "name": "Khaki Utility Pants",
+    "gender": "men",
+    "type": "cargo-pants",
+    "category": "outdoor",
+    "price": 4201,
+    "mrp": 6961,
+    "originalPrice": 6961,
+    "images": [
+      "assets/images/products/men/cargo-pants/cargo-002-a.webp",
+      "assets/images/products/men/cargo-pants/cargo-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 3.5,
+    "reviews": 28,
+    "description": "Elevate your wardrobe with the Khaki Utility Pants. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-cargo-pants-003",
+    "name": "Black Tactical Cargos",
+    "gender": "men",
+    "type": "cargo-pants",
+    "category": "outdoor",
+    "price": 1660,
+    "mrp": 4212,
+    "originalPrice": 4212,
+    "images": [
+      "assets/images/products/men/cargo-pants/cargo-003-a.webp",
+      "assets/images/products/men/cargo-pants/cargo-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 3.9,
+    "reviews": 46,
+    "description": "Elevate your wardrobe with the Black Tactical Cargos. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-cargo-pants-004",
+    "name": "Navy Chino Cargos",
+    "gender": "men",
+    "type": "cargo-pants",
+    "category": "outdoor",
+    "price": 5514,
+    "mrp": 6641,
+    "originalPrice": 6641,
+    "images": [
+      "assets/images/products/men/cargo-pants/cargo-004-a.webp",
+      "assets/images/products/men/cargo-pants/cargo-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 98,
+    "description": "Elevate your wardrobe with the Navy Chino Cargos. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-cargo-pants-005",
+    "name": "Camo Print Pants",
+    "gender": "men",
+    "type": "cargo-pants",
+    "category": "outdoor",
+    "price": 4135,
+    "mrp": 6457,
+    "originalPrice": 6457,
+    "images": [
+      "assets/images/products/men/cargo-pants/cargo-005-a.webp",
+      "assets/images/products/men/cargo-pants/cargo-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Best Seller",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.7,
+    "reviews": 15,
+    "description": "Elevate your wardrobe with the Camo Print Pants. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "men-cargo-pants-006",
+    "name": "Beige Outdoor Trousers",
+    "gender": "men",
+    "type": "cargo-pants",
+    "category": "outdoor",
+    "price": 5445,
+    "mrp": 8281,
+    "originalPrice": 8281,
+    "images": [
+      "assets/images/products/men/cargo-pants/cargo-006-a.webp",
+      "assets/images/products/men/cargo-pants/cargo-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 5,
+    "reviews": 33,
+    "description": "Elevate your wardrobe with the Beige Outdoor Trousers. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  }
+]

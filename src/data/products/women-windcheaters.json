@@ -1,0 +1,158 @@
+[
+  {
+    "id": "women-windcheaters-001",
+    "name": "Neon Pink Windcheater",
+    "gender": "women",
+    "type": "windcheaters",
+    "category": "outdoor",
+    "price": 6360,
+    "mrp": 9089,
+    "originalPrice": 9089,
+    "images": [
+      "assets/images/products/women/windcheaters/wcheat-001-a.webp",
+      "assets/images/products/women/windcheaters/wcheat-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 207,
+    "description": "Elevate your wardrobe with the Neon Pink Windcheater. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-windcheaters-002",
+    "name": "Black Lightweight Jacket",
+    "gender": "women",
+    "type": "windcheaters",
+    "category": "outdoor",
+    "price": 4195,
+    "mrp": 6845,
+    "originalPrice": 6845,
+    "images": [
+      "assets/images/products/women/windcheaters/wcheat-002-a.webp",
+      "assets/images/products/women/windcheaters/wcheat-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.4,
+    "reviews": 236,
+    "description": "Elevate your wardrobe with the Black Lightweight Jacket. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-windcheaters-003",
+    "name": "Silver Reflective Anorak",
+    "gender": "women",
+    "type": "windcheaters",
+    "category": "outdoor",
+    "price": 5557,
+    "mrp": 8369,
+    "originalPrice": 8369,
+    "images": [
+      "assets/images/products/women/windcheaters/wcheat-003-a.webp",
+      "assets/images/products/women/windcheaters/wcheat-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 81,
+    "description": "Elevate your wardrobe with the Silver Reflective Anorak. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-windcheaters-004",
+    "name": "Navy Blue Weather Jacket",
+    "gender": "women",
+    "type": "windcheaters",
+    "category": "outdoor",
+    "price": 5552,
+    "mrp": 6667,
+    "originalPrice": 6667,
+    "images": [
+      "assets/images/products/women/windcheaters/wcheat-004-a.webp",
+      "assets/images/products/women/windcheaters/wcheat-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.8,
+    "reviews": 25,
+    "description": "Elevate your wardrobe with the Navy Blue Weather Jacket. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-windcheaters-005",
+    "name": "Olive Active Windbreaker",
+    "gender": "women",
+    "type": "windcheaters",
+    "category": "outdoor",
+    "price": 6155,
+    "mrp": 8400,
+    "originalPrice": 8400,
+    "images": [
+      "assets/images/products/women/windcheaters/wcheat-005-a.webp",
+      "assets/images/products/women/windcheaters/wcheat-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.8,
+    "reviews": 37,
+    "description": "Elevate your wardrobe with the Olive Active Windbreaker. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  },
+  {
+    "id": "women-windcheaters-006",
+    "name": "White Running Shell",
+    "gender": "women",
+    "type": "windcheaters",
+    "category": "outdoor",
+    "price": 2798,
+    "mrp": 3836,
+    "originalPrice": 3836,
+    "images": [
+      "assets/images/products/women/windcheaters/wcheat-006-a.webp",
+      "assets/images/products/women/windcheaters/wcheat-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.5,
+    "reviews": 209,
+    "description": "Elevate your wardrobe with the White Running Shell. Designed meticulously for maximum comfort and unparalleled style. Ideal for outdoor occasions."
+  }
+]

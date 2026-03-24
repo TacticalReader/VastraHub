@@ -1,0 +1,158 @@
+[
+  {
+    "id": "men-blazers-001",
+    "name": "Tweed Check Blazer",
+    "gender": "men",
+    "type": "blazers",
+    "category": "formal",
+    "price": 1617,
+    "mrp": 4492,
+    "originalPrice": 4492,
+    "images": [
+      "assets/images/products/men/blazers/blazer-001-a.webp",
+      "assets/images/products/men/blazers/blazer-0010-a.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.1,
+    "reviews": 307,
+    "description": "Elevate your wardrobe with the Tweed Check Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-blazers-002",
+    "name": "Navy Blue Blazer",
+    "gender": "men",
+    "type": "blazers",
+    "category": "formal",
+    "price": 2138,
+    "mrp": 4960,
+    "originalPrice": 4960,
+    "images": [
+      "assets/images/products/men/blazers/blazer-0011-a.webp",
+      "assets/images/products/men/blazers/blazer-0012-a.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 3.5,
+    "reviews": 129,
+    "description": "Elevate your wardrobe with the Navy Blue Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-blazers-003",
+    "name": "Wool Blend Sport Coat",
+    "gender": "men",
+    "type": "blazers",
+    "category": "formal",
+    "price": 4749,
+    "mrp": 6091,
+    "originalPrice": 6091,
+    "images": [
+      "assets/images/products/men/blazers/blazer-002-a.webp",
+      "assets/images/products/men/blazers/blazer-003-a.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 56,
+    "description": "Elevate your wardrobe with the Wool Blend Sport Coat. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-blazers-004",
+    "name": "Velvet Dinner Blazer",
+    "gender": "men",
+    "type": "blazers",
+    "category": "formal",
+    "price": 5146,
+    "mrp": 6504,
+    "originalPrice": 6504,
+    "images": [
+      "assets/images/products/men/blazers/blazer-004-a.webp",
+      "assets/images/products/men/blazers/blazer-005-a.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.2,
+    "reviews": 129,
+    "description": "Elevate your wardrobe with the Velvet Dinner Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-blazers-005",
+    "name": "Camel Cotton Blazer",
+    "gender": "men",
+    "type": "blazers",
+    "category": "formal",
+    "price": 5805,
+    "mrp": 7276,
+    "originalPrice": 7276,
+    "images": [
+      "assets/images/products/men/blazers/blazer-006-a.webp",
+      "assets/images/products/men/blazers/blazer-007-a.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 5,
+    "reviews": 205,
+    "description": "Elevate your wardrobe with the Camel Cotton Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "men-blazers-006",
+    "name": "Burgundy Double Breasted Blazer",
+    "gender": "men",
+    "type": "blazers",
+    "category": "formal",
+    "price": 2889,
+    "mrp": 4217,
+    "originalPrice": 4217,
+    "images": [
+      "assets/images/products/men/blazers/blazer-008-a.webp",
+      "assets/images/products/men/blazers/blazer-009-a.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 5,
+    "reviews": 15,
+    "description": "Elevate your wardrobe with the Burgundy Double Breasted Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  }
+]

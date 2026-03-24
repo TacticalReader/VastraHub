@@ -1,0 +1,462 @@
+/* ============================================
+   VastraHub — Global Styles & CSS Variables
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Serif+Display&family=Dancing+Script:wght@600&family=Inter:wght@300;400;500;600&family=Marcellus&family=Oswald:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@500;700&family=Syne:wght@600;800&display=swap');
+
+/* ─── Light Theme Tokens ─── */
+:root {
+  /* Brand colours */
+  --color-primary: #c8421a;
+  /* rich saffron-red */
+  --color-primary-hover: #a83515;
+  --color-primary-light: #fef0eb;
+  --color-accent: #d4a853;
+  /* warm gold */
+  --color-accent-hover: #b8923e;
+
+  /* Backgrounds */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f9f7f4;
+  --color-bg-card: #ffffff;
+  --color-bg-overlay: rgba(0, 0, 0, 0.45);
+
+  /* Navbar */
+  --color-nav-bg: rgba(255, 255, 255, 0.97);
+  --color-nav-bg-scrolled: rgba(255, 255, 255, 0.98);
+  --color-nav-border: rgba(0, 0, 0, 0.08);
+
+  /* Text */
+  --color-text: #1a1a1a;
+  --color-text-secondary: #555;
+  --color-text-muted: #888;
+  --color-text-inverse: #ffffff;
+
+  /* Borders / Dividers */
+  --color-border: #e5e0da;
+  --color-border-light: #f0ece6;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.14);
+  --shadow-nav: 0 2px 16px rgba(0, 0, 0, 0.09);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Fonts */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-space: 'Space Grotesk', sans-serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-bebas: 'Bebas Neue', display;
+  --font-syne: 'Syne', sans-serif;
+  --font-dm: 'DM Serif Display', serif;
+  --font-marcellus: 'Marcellus', serif;
+  --font-oswald: 'Oswald', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Z-indices */
+  --z-navbar: 1000;
+  --z-dropdown: 1100;
+  --z-modal: 1300;
+  --z-toast: 1400;
+}
+
+/* ─── Dark Theme Tokens ─── */
+[data-theme="dark"] {
+  --color-primary: #e8603a;
+  --color-primary-hover: #f07452;
+  --color-primary-light: #2d1810;
+  --color-accent: #d4a853;
+
+  --color-bg: #0f0f0f;
+  --color-bg-secondary: #171717;
+  --color-bg-card: #1c1c1c;
+
+  --color-nav-bg: rgba(15, 15, 15, 0.97);
+  --color-nav-bg-scrolled: rgba(12, 12, 12, 0.99);
+  --color-nav-border: rgba(255, 255, 255, 0.07);
+
+  --color-text: #f0ece6;
+  --color-text-secondary: #b0a89e;
+  --color-text-muted: #777;
+  --color-text-inverse: #0f0f0f;
+
+  --color-border: #2a2a2a;
+  --color-border-light: #222;
+
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.6);
+  --shadow-nav: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── CSS Reset ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* ─── Utility Classes ─── */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+
+/* ============================================
+   VastraHub — Premium Custom CSS Layer
+   (Pure CSS, no Tailwind needed)
+   ============================================ */
+
+/* ─── Gradient text utility ─── */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Glassmorphism card ─── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] .glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ─── Card lift on hover ─── */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.16);
+}
+
+/* ─── Glow button ─── */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 0 4px rgba(200, 66, 26, 0.25), 0 6px 24px rgba(200, 66, 26, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-glow:active {
+  transform: translateY(0);
+}
+
+/* Shimmer sweep on hover */
+.btn-glow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.btn-glow:hover::after {
+  left: 130%;
+}
+
+/* ─── Section divider with gradient ─── */
+.divider-gradient {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg,
+      transparent 0%,
+      var(--color-primary) 30%,
+      var(--color-accent) 70%,
+      transparent 100%);
+  margin: 2rem 0;
+  opacity: 0.4;
+}
+
+/* ─── Badge / tag pill ─── */
+.badge-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border: 1px solid rgba(200, 66, 26, 0.2);
+}
+
+/* ─── Floating avatar ring for testimonials ─── */
+.avatar-ring {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-ring::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  z-index: -1;
+}
+
+/* ─── Product image zoom container ─── */
+.img-zoom {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.img-zoom img {
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.07);
+}
+
+/* ─── Focus ring utility ─── */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ─── Underline hover link ─── */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* ─── Stats counter section gradient backdrop ─── */
+.stats-section {
+  background: linear-gradient(135deg,
+      var(--color-bg-secondary) 0%,
+      var(--color-primary-light) 50%,
+      var(--color-bg-secondary) 100%);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ─── Custom scrollbar for filter panel ─── */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* ─── Input focus glow ─── */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(200, 66, 26, 0.15);
+  border-color: var(--color-primary) !important;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* ─── Page section fade-in on scroll (requires .in-view class toggled by IntersectionObserver or framer) ─── */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.section-reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Ribbon corner badge ─── */
+.ribbon {
+  position: absolute;
+  top: 12px;
+  left: -6px;
+  padding: 3px 12px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ribbon::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-width: 5px 6px 0 0;
+  border-style: solid;
+  border-color: #8b2e12 transparent transparent;
+}
+
+/* ─── Scrolled nav glow line ─── */
+#main-navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#main-navbar.scrolled::after {
+  opacity: 0.5;
+}
+
+/* ─── Responsive typography scale ─── */
+@media (min-width: 768px) {
+  h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
+}

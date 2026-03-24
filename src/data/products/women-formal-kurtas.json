@@ -1,0 +1,158 @@
+[
+  {
+    "id": "women-formal-kurtas-001",
+    "name": "Silk Embroidered Kurta",
+    "gender": "women",
+    "type": "formal-kurtas",
+    "category": "formal",
+    "price": 1964,
+    "mrp": 3574,
+    "originalPrice": 3574,
+    "images": [
+      "assets/images/products/women/formal-kurtas/fkurta-001-a.webp",
+      "assets/images/products/women/formal-kurtas/fkurta-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.7,
+    "reviews": 306,
+    "description": "Elevate your wardrobe with the Silk Embroidered Kurta. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-kurtas-002",
+    "name": "Cotton Straight Kurta",
+    "gender": "women",
+    "type": "formal-kurtas",
+    "category": "formal",
+    "price": 3438,
+    "mrp": 6291,
+    "originalPrice": 6291,
+    "images": [
+      "assets/images/products/women/formal-kurtas/fkurta-002-a.webp",
+      "assets/images/products/women/formal-kurtas/fkurta-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.3,
+    "reviews": 97,
+    "description": "Elevate your wardrobe with the Cotton Straight Kurta. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-kurtas-003",
+    "name": "Chanderi Festive Kurta",
+    "gender": "women",
+    "type": "formal-kurtas",
+    "category": "formal",
+    "price": 4181,
+    "mrp": 6572,
+    "originalPrice": 6572,
+    "images": [
+      "assets/images/products/women/formal-kurtas/fkurta-003-a.webp",
+      "assets/images/products/women/formal-kurtas/fkurta-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 3.7,
+    "reviews": 202,
+    "description": "Elevate your wardrobe with the Chanderi Festive Kurta. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-kurtas-004",
+    "name": "Georgette A-Line Kurta",
+    "gender": "women",
+    "type": "formal-kurtas",
+    "category": "formal",
+    "price": 5107,
+    "mrp": 7954,
+    "originalPrice": 7954,
+    "images": [
+      "assets/images/products/women/formal-kurtas/fkurta-004-a.webp",
+      "assets/images/products/women/formal-kurtas/fkurta-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.6,
+    "reviews": 240,
+    "description": "Elevate your wardrobe with the Georgette A-Line Kurta. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-kurtas-005",
+    "name": "Viscose Anarkali",
+    "gender": "women",
+    "type": "formal-kurtas",
+    "category": "formal",
+    "price": 2256,
+    "mrp": 4017,
+    "originalPrice": 4017,
+    "images": [
+      "assets/images/products/women/formal-kurtas/fkurta-005-a.webp",
+      "assets/images/products/women/formal-kurtas/fkurta-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.4,
+    "reviews": 251,
+    "description": "Elevate your wardrobe with the Viscose Anarkali. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-formal-kurtas-006",
+    "name": "Linen Blend Tunic",
+    "gender": "women",
+    "type": "formal-kurtas",
+    "category": "formal",
+    "price": 5471,
+    "mrp": 6878,
+    "originalPrice": 6878,
+    "images": [
+      "assets/images/products/women/formal-kurtas/fkurta-006-a.webp",
+      "assets/images/products/women/formal-kurtas/fkurta-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.6,
+    "reviews": 117,
+    "description": "Elevate your wardrobe with the Linen Blend Tunic. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  }
+]

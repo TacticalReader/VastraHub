@@ -1,0 +1,158 @@
+[
+  {
+    "id": "women-blazers-001",
+    "name": "Tailored Black Blazer",
+    "gender": "women",
+    "type": "blazers",
+    "category": "formal",
+    "price": 5721,
+    "mrp": 8709,
+    "originalPrice": 8709,
+    "images": [
+      "assets/images/products/women/blazers/wblazer-001-a.webp",
+      "assets/images/products/women/blazers/wblazer-001-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Hot",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.4,
+    "reviews": 39,
+    "description": "Elevate your wardrobe with the Tailored Black Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-blazers-002",
+    "name": "Navy Power Suit Blazer",
+    "gender": "women",
+    "type": "blazers",
+    "category": "formal",
+    "price": 2444,
+    "mrp": 4727,
+    "originalPrice": 4727,
+    "images": [
+      "assets/images/products/women/blazers/wblazer-002-a.webp",
+      "assets/images/products/women/blazers/wblazer-002-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.6,
+    "reviews": 92,
+    "description": "Elevate your wardrobe with the Navy Power Suit Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-blazers-003",
+    "name": "Plaid Oversized Blazer",
+    "gender": "women",
+    "type": "blazers",
+    "category": "formal",
+    "price": 2041,
+    "mrp": 4379,
+    "originalPrice": 4379,
+    "images": [
+      "assets/images/products/women/blazers/wblazer-003-a.webp",
+      "assets/images/products/women/blazers/wblazer-003-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.2,
+    "reviews": 144,
+    "description": "Elevate your wardrobe with the Plaid Oversized Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-blazers-004",
+    "name": "Cream Linen Jacket",
+    "gender": "women",
+    "type": "blazers",
+    "category": "formal",
+    "price": 6371,
+    "mrp": 8441,
+    "originalPrice": 8441,
+    "images": [
+      "assets/images/products/women/blazers/wblazer-004-a.webp",
+      "assets/images/products/women/blazers/wblazer-004-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "Special Ed.",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.9,
+    "reviews": 46,
+    "description": "Elevate your wardrobe with the Cream Linen Jacket. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-blazers-005",
+    "name": "Grey Check Coat",
+    "gender": "women",
+    "type": "blazers",
+    "category": "formal",
+    "price": 2247,
+    "mrp": 3359,
+    "originalPrice": 3359,
+    "images": [
+      "assets/images/products/women/blazers/wblazer-005-a.webp",
+      "assets/images/products/women/blazers/wblazer-005-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "New",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 4.4,
+    "reviews": 145,
+    "description": "Elevate your wardrobe with the Grey Check Coat. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  },
+  {
+    "id": "women-blazers-006",
+    "name": "Burgundy Formal Blazer",
+    "gender": "women",
+    "type": "blazers",
+    "category": "formal",
+    "price": 2644,
+    "mrp": 5166,
+    "originalPrice": 5166,
+    "images": [
+      "assets/images/products/women/blazers/wblazer-006-a.webp",
+      "assets/images/products/women/blazers/wblazer-006-b.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "badge": "",
+    "isFeatured": false,
+    "isNew": false,
+    "rating": 3.5,
+    "reviews": 301,
+    "description": "Elevate your wardrobe with the Burgundy Formal Blazer. Designed meticulously for maximum comfort and unparalleled style. Ideal for formal occasions."
+  }
+]
