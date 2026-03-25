@@ -17,6 +17,17 @@ export function WishlistProvider({ children }) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
   }, [items]);
 
+  // Sync across tabs
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === STORAGE_KEY) {
+        try { setItems(JSON.parse(e.newValue) ?? []); } catch { /* ignore */ }
+      }
+    };
+    window.addEventListener('storage', handler);
+    return () => window.removeEventListener('storage', handler);
+  }, []);
+
   const toggleWishlist = useCallback((product) => {
     setItems((prev) => {
       const exists = prev.some((p) => p.id === product.id);
