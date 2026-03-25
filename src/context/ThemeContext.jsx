@@ -20,6 +20,17 @@ export function ThemeProvider({ children }) {
     localStorage.setItem(STORAGE_KEY, theme);
   }, [theme]);
 
+  // Sync across tabs
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === STORAGE_KEY && e.newValue) {
+        setTheme(e.newValue);
+      }
+    };
+    window.addEventListener('storage', handler);
+    return () => window.removeEventListener('storage', handler);
+  }, []);
+
   const toggleTheme = () =>
     setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
 
