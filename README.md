@@ -413,7 +413,6 @@ import { HashRouter } from 'react-router-dom';
 | **Authentication** | UI-only simulation. Any input logs you in. No real security. |
 | **Checkout** | Multi-step form prototype only. No real payment processing. |
 | **Cart / Wishlist** | State persists via `localStorage`. Clears on browser data wipe. |
-| **Cross-tab Sync** | Cart changes in one tab won't reflect in another without a reload. |
 | **SEO** | Single-page app — no SSR, no per-route meta tags (title set via `document.title`). |
 | **Images** | Paths must be relative or prefixed with `import.meta.env.BASE_URL` for GitHub Pages subdirectory compatibility. |
 | **Search** | Searches over local JSON only — no server-side full-text search. |
