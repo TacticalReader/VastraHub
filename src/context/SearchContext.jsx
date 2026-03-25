@@ -19,12 +19,14 @@ const FUSE_OPTIONS = {
 export function SearchProvider({ children, products = [] }) {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
+  const [highlightedIndex, setHighlightedIndex] = useState(-1);
 
   // Create Fuse instance once per products array update
   const fuseRef = useRef(null);
   fuseRef.current = useMemo(() => new Fuse(products, FUSE_OPTIONS), [products]);
 
   const results = useMemo(() => {
+    setHighlightedIndex(-1); // Reset highlight when query changes
     if (!query.trim() || query.length < 2) return [];
     return fuseRef.current
       .search(query.trim())
@@ -36,11 +38,21 @@ export function SearchProvider({ children, products = [] }) {
   const closeSearch = useCallback(() => {
     setIsOpen(false);
     setQuery('');
+    setHighlightedIndex(-1);
   }, []);
 
   return (
     <SearchContext.Provider
-      value={{ query, setQuery, results, isOpen, openSearch, closeSearch }}
+      value={{
+        query,
+        setQuery,
+        results,
+        isOpen,
+        openSearch,
+        closeSearch,
+        highlightedIndex,
+        setHighlightedIndex
+      }}
     >
       {children}
     </SearchContext.Provider>
