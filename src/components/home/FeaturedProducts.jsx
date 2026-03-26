@@ -1,7 +1,3 @@
-// src/components/home/FeaturedProducts.jsx
-// "New Arrivals" section — uses promo-new-arrivals.webp as header bg
-// Products with isNew: true are shown via ProductCard
-
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import allProducts from '../../data/allProducts';
@@ -11,66 +7,102 @@ const newArrivals = allProducts.filter((p) => p.isNew).slice(0, 8);
 
 export default function FeaturedProducts() {
   return (
-    <section id="new-arrivals" className="py-16 md:py-24" aria-labelledby="new-arrivals-heading">
-      {/* Section header with promo background image */}
-      <div
-        className="relative mb-12 flex flex-col items-center justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 py-12"
-        style={{ minHeight: '160px' }}
-      >
-        <img
-          src={import.meta.env.BASE_URL + 'assets/images/banners/promo-new-arrivals.webp'}
-          alt="New Arrivals"
-          width={1200}
-          height={400}
-          loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.48)' }} />
-        <div className="relative z-10 text-center text-white px-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] opacity-75 mb-2">✦ Just Arrived</p>
-          <h2
-            id="new-arrivals-heading"
-            className="text-3xl font-extrabold md:text-4xl"
-            style={{ fontFamily: 'var(--font-heading)' }}
+    <section id="new-arrivals" className="py-16 md:py-32 bg-gray-50 dark:bg-zinc-950" aria-labelledby="new-arrivals-heading">
+      {/* Enhanced Section header with modern overlay and glassmorphism */}
+      <div className="container mx-auto px-4 mb-16">
+        <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-3xl min-h-[320px] md:min-h-[400px] shadow-2xl group">
+          <img
+            src={import.meta.env.BASE_URL + 'assets/images/banners/promo-new-arrivals.webp'}
+            alt="New Arrivals Background"
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+          />
+          {/* Refined gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+          
+          {/* Glassmorphic content box */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative z-10 text-center text-white px-8 py-10 backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl mx-4 max-w-lg shadow-xl"
           >
-            New Arrivals
-          </h2>
-          <p className="mt-2 text-sm opacity-80 max-w-md mx-auto">
-            Fresh styles added every week — be the first to wear them.
-          </p>
+            <div className="inline-flex items-center justify-center space-x-2 mb-4">
+              <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
+              <p className="text-xs font-bold uppercase tracking-widest text-blue-200">Just Arrived</p>
+            </div>
+            <h2
+              id="new-arrivals-heading"
+              className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300"
+            >
+              New Arrivals
+            </h2>
+            <p className="text-sm md:text-base text-gray-200 font-medium leading-relaxed">
+              Discover the latest styles added this week. Elevate your wardrobe with our fresh curated pieces.
+            </p>
+          </motion.div>
         </div>
       </div>
 
-      <div className="container">
+      <div className="container mx-auto px-4">
         {newArrivals.length === 0 ? (
-          <p className="py-12 text-center" style={{ color: 'var(--color-text-muted)' }}>
-            No new arrivals right now. Check back soon!
-          </p>
+          <div className="py-20 flex flex-col items-center justify-center text-gray-500 dark:text-gray-400">
+            <svg className="w-16 h-16 mb-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+            <p className="text-lg font-medium">No new arrivals right now.</p>
+            <p className="text-sm">Check back soon for fresh drops!</p>
+          </div>
         ) : (
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:gap-6">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-12">
             {newArrivals.map((product, i) => (
               <motion.div
                 key={product.id}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ delay: i * 0.07, duration: 0.4 }}
+                viewport={{ once: true, margin: '-50px' }}
+                transition={{ 
+                  delay: i * 0.1, 
+                  duration: 0.5,
+                  type: 'spring',
+                  stiffness: 100
+                }}
+                className="group cursor-pointer"
               >
-                <ProductCard product={product} />
+                {/* Wrapper interaction for the product card */}
+                <div className="transition-transform duration-300 ease-out group-hover:-translate-y-2">
+                  <ProductCard product={product} />
+                </div>
               </motion.div>
             ))}
           </div>
         )}
 
-        <div className="mt-10 text-center">
-          <Link
-            to="/shop"
-            className="inline-flex items-center gap-2 rounded-full border px-8 py-3 text-sm font-semibold transition-colors hover:opacity-80"
-            style={{ borderColor: 'var(--color-primary)', color: 'var(--color-primary)' }}
+        {/* Modern CTA */}
+        {newArrivals.length > 0 && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
           >
-            View All New Arrivals →
-          </Link>
-        </div>
+            <Link
+              to="/shop"
+              className="group inline-flex items-center gap-3 rounded-full bg-zinc-900 dark:bg-white px-8 py-4 text-sm font-semibold text-white dark:text-zinc-900 shadow-md transition-all hover:bg-zinc-800 dark:hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2 dark:focus:ring-white dark:focus:ring-offset-zinc-900"
+            >
+              <span>Explore All New Arrivals</span>
+              <svg 
+                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
+          </motion.div>
+        )}
       </div>
     </section>
   );
