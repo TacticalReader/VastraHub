@@ -110,3 +110,203 @@
 .animate-glow-pulse     { animation: glowPulse 2s ease-in-out infinite; }
 .animate-text-reveal    { animation: textReveal 0.6s cubic-bezier(0.77, 0, 0.18, 1) forwards; }
 
+
+/* ============================================================
+   ADD-TO-CART ANIMATIONS  — VastraHub
+   ============================================================ */
+
+/* ── 1. Button success pulse ── */
+@keyframes cartBtnSuccess {
+  0%   { transform: scale(1);    }
+  30%  { transform: scale(0.92); }
+  60%  { transform: scale(1.06); }
+  100% { transform: scale(1);    }
+}
+
+.cart-btn-animating {
+  animation: cartBtnSuccess 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* ── 2. Ripple on button click ── */
+@keyframes cartRipple {
+  0%   { transform: scale(0); opacity: 0.55; }
+  100% { transform: scale(5); opacity: 0; }
+}
+
+.cart-ripple-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.cart-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  pointer-events: none;
+  animation: cartRipple 0.65s ease-out forwards;
+}
+
+/* ── 3. Particle burst (flying dots to cart) ── */
+@keyframes particleFly {
+  0%   { transform: translate(0, 0) scale(1);        opacity: 1; }
+  80%  { opacity: 1; }
+  100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+}
+
+.cart-particle {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary, #c8421a);
+  pointer-events: none;
+  z-index: 9999;
+  animation: particleFly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* ── 4. Toast slide-in / out ── */
+@keyframes toastIn {
+  0%   { opacity: 0; transform: translateX(110%) scale(0.85); }
+  60%  { opacity: 1; transform: translateX(-6px)  scale(1.02); }
+  100% { opacity: 1; transform: translateX(0)     scale(1); }
+}
+
+@keyframes toastOut {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(110%); }
+}
+
+@keyframes progressShrink {
+  from { width: 100%; }
+  to   { width: 0%; }
+}
+
+.animate-toast-in  { animation: toastIn  0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+.animate-toast-out { animation: toastOut 0.32s ease-in forwards; }
+
+/* ── 5. Toast Portal ── */
+.cart-toast-portal {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.6rem;
+  pointer-events: none;
+  max-width: 340px;
+  width: calc(100vw - 2rem);
+}
+
+/* ── 6. Toast card ── */
+.cart-toast {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  border-radius: 14px;
+  background: var(--color-bg-card, #1a1a1a);
+  border: 1px solid var(--color-border-light, rgba(255,255,255,0.1));
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.25);
+  pointer-events: all;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+}
+
+.cart-toast__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.cart-toast__img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border-light, rgba(255,255,255,0.1));
+}
+
+.cart-toast__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-toast__title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #16a34a;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.cart-toast__name {
+  font-size: 0.82rem;
+  color: var(--color-text, #f1f1f1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  margin-top: 0.1rem;
+}
+
+.cart-toast__bag {
+  color: var(--color-text-muted, #888);
+  flex-shrink: 0;
+}
+
+.cart-toast__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted, #888);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  flex-shrink: 0;
+  pointer-events: all;
+}
+.cart-toast__close:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--color-text, #f1f1f1);
+}
+
+/* ── 7. Progress bar at bottom of toast ── */
+.cart-toast__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 0 0 14px 14px;
+  background: var(--color-primary, #c8421a);
+  animation: progressShrink 3s linear forwards;
+}
+
+/* ── 8. Cart badge bump ── */
+@keyframes cartBadgeBump {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.5); }
+  70%  { transform: scale(0.85); }
+  100% { transform: scale(1); }
+}
+
+.cart-badge-bump {
+  animation: cartBadgeBump 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}

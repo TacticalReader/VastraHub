@@ -3,13 +3,13 @@
 // Uses RelatedProducts (connects same-category product images)
 // Uses india-delivery.svg (inline delivery badge)
 
-import { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import allProducts from '../data/allProducts';
 import ProductImageGallery from '../components/product/ProductImageGallery';
 import RelatedProducts from '../components/product/RelatedProducts';
-import { FiShoppingCart, FiHeart, FiShare2 } from 'react-icons/fi';
-import { useCart } from '../hooks/useCart';
+import { FiShoppingCart, FiHeart, FiShare2, FiCheck } from 'react-icons/fi';
+import { useAddToCartAnimation } from '../hooks/useAddToCartAnimation';
 import { useWishlist } from '../hooks/useWishlist';
 import SizeSelector from '../components/product/SizeSelector';
 import ColorSelector from '../components/product/ColorSelector';
@@ -21,12 +21,46 @@ import Tooltip from '../components/ui/Tooltip';
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
+/* ── particle burst helper (same as ProductCard) ── */
+function spawnParticles(originEl) {
+  if (!originEl) return;
+  const rect = originEl.getBoundingClientRect();
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top + rect.height / 2;
+  const COUNT = 8;
+  for (let i = 0; i < COUNT; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'cart-particle';
+    const angle = (360 / COUNT) * i;
+    const dist = 70 + Math.random() * 50;
+    const tx = Math.cos((angle * Math.PI) / 180) * dist;
+    const ty = Math.sin((angle * Math.PI) / 180) * dist;
+    dot.style.cssText = `left:${cx}px;top:${cy}px;--tx:${tx}px;--ty:${ty}px;`;
+    document.body.appendChild(dot);
+    setTimeout(() => dot.remove(), 800);
+  }
+}
+
 export default function ProductDetailPage() {
   const { id } = useParams();
   const product = useMemo(() => allProducts.find((p) => p.id === id), [id]);
   
-  const { addToCart } = useCart();
+  const { wrappedAddToCart, animating } = useAddToCartAnimation();
   const { isWishlisted, toggleWishlist } = useWishlist();
+  const [ripples, setRipples] = useState([]);
+  const ctaBtnRef = useRef(null);
+
+  const handleAddToCart = useCallback((e) => {
+    // 1. ripple
+    const rect = e.currentTarget.getBoundingClientRect();
+    const id = Date.now();
+    setRipples((r) => [...r, { id, x: e.clientX - rect.left, y: e.clientY - rect.top }]);
+    setTimeout(() => setRipples((r) => r.filter((ri) => ri.id !== id)), 700);
+    // 2. particles
+    spawnParticles(ctaBtnRef.current);
+    // 3. add + toast
+    wrappedAddToCart(product, size, 1);
+  }, [wrappedAddToCart, product, size]);
   
   const resolvedSizes = product?.sizes ?? SIZES;
   const resolvedColors = product?.colors ?? [
@@ -126,15 +160,31 @@ export default function ProductDetailPage() {
 
           {/* CTA buttons */}
           <div className="flex gap-3">
-            <Button
-              variant="primary"
-              size="lg"
-              className="flex-1 rounded-full tracking-wide uppercase font-bold"
-              style={{ fontFamily: 'var(--font-syne)' }}
-              onClick={() => addToCart(product, size, 1)}
+            <button
+              ref={ctaBtnRef}
+              className={`cart-ripple-wrap flex-1 flex items-center justify-center gap-2 rounded-full tracking-wide uppercase font-bold text-sm px-8 py-4 ${animating ? 'cart-btn-animating' : ''}`}
+              style={{
+                background: animating ? '#16a34a' : 'var(--color-primary)',
+                color: '#fff',
+                border: 'none',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-syne)',
+                transition: 'background 0.3s',
+                minHeight: '3.5rem',
+              }}
+              onClick={handleAddToCart}
+              aria-label="Add to cart"
             >
-              <FiShoppingCart size={18} className="mr-2" /> Add to Cart
-            </Button>
+              {/* ripples */}
+              {ripples.map(({ id, x, y }) => (
+                <span key={id} className="cart-ripple" style={{ left: x, top: y }} />
+              ))}
+
+              <span style={{ display:'flex', alignItems:'center', transition:'transform 0.25s', transform: animating ? 'scale(1.25)' : 'scale(1)' }}>
+                {animating ? <FiCheck size={20} strokeWidth={3} /> : <FiShoppingCart size={18} />}
+              </span>
+              {animating ? 'Added to Cart!' : 'Add to Cart'}
+            </button>
             
             <Tooltip content={inWishlist ? "Remove from Wishlist" : "Add to Wishlist"}>
               <button

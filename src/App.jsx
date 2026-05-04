@@ -8,6 +8,7 @@ import { WishlistProvider } from './context/WishlistContext';
 import { SearchProvider } from './context/SearchContext';
 import Router from './router';
 import allProducts from './data/allProducts';
+import AddToCartToast from './components/ui/AddToCartToast';
 
 // Inline CustomCursor component so we don't create new files
 function CustomCursor() {
@@ -94,6 +95,7 @@ export default function App() {
             <SearchProvider products={allProducts}>
               <CustomCursor />
               <Router />
+              <AddToCartToast />
               <Toaster
                 position="bottom-right"
                 toastOptions={{
