@@ -45,10 +45,28 @@ export default function ProductDetailPage() {
   const { id } = useParams();
   const product = useMemo(() => allProducts.find((p) => p.id === id), [id]);
   
+  // Initialize state variables first
+  const [size, setSize] = useState('');
+  const [color, setColor] = useState(null);
+  const [ripples, setRipples] = useState([]);
+  
   const { wrappedAddToCart, animating } = useAddToCartAnimation();
   const { isWishlisted, toggleWishlist } = useWishlist();
-  const [ripples, setRipples] = useState([]);
   const ctaBtnRef = useRef(null);
+
+  // Reset size and color when product changes
+  useEffect(() => {
+    if (product) {
+      const resolvedSizes = product?.sizes ?? SIZES;
+      const resolvedColors = product?.colors ?? [
+        { id: 'c1', name: 'Navy', hex: '#1E3A8A' },
+        { id: 'c2', name: 'Black', hex: '#111827' },
+        { id: 'c3', name: 'Charcoal', hex: '#374151' }
+      ];
+      setSize(resolvedSizes[0]);
+      setColor(resolvedColors[0]);
+    }
+  }, [product?.id]);
 
   const handleAddToCart = useCallback((e) => {
     // 1. ripple
@@ -61,23 +79,13 @@ export default function ProductDetailPage() {
     // 3. add + toast
     wrappedAddToCart(product, size, 1);
   }, [wrappedAddToCart, product, size]);
-  
+   
   const resolvedSizes = product?.sizes ?? SIZES;
   const resolvedColors = product?.colors ?? [
     { id: 'c1', name: 'Navy', hex: '#1E3A8A' },
     { id: 'c2', name: 'Black', hex: '#111827' },
     { id: 'c3', name: 'Charcoal', hex: '#374151' }
   ];
-  const [size, setSize] = useState('');
-  const [color, setColor] = useState(null);
-
-  // Reset size and color when product changes
-  useEffect(() => {
-    if (product) {
-      setSize(resolvedSizes[0]);
-      setColor(resolvedColors[0]);
-    }
-  }, [product?.id]);
 
   const inWishlist = product ? isWishlisted(product.id) : false;
 
